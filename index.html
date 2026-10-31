@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Санисайд · spoon & story</title>
+  <meta name="description" content="Санисайд — кафе с авторскими завтраками, тостами, боулами и горячими блюдами. Подаём весь день." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="logo-mark">С</div>
+      <div class="preloader-text">санисайд</div>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">С</span>
+        <span class="logo-text">санисайд</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#breakfast" class="nav-link">Завтраки</a>
+        <a href="#toasts" class="nav-link">Тосты</a>
+        <a href="#bowls" class="nav-link">Боулы</a>
+        <a href="#hot" class="nav-link">Горячее</a>
+        <a href="#build" class="nav-link">Собери сам</a>
+        <a href="#drinks" class="nav-link">Напитки</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow animate-up">spoon & story</p>
+      <h1 class="hero-title animate-up delay-1">
+        Санисайд
+      </h1>
+      <p class="hero-subtitle animate-up delay-2">
+        Авторские завтраки, тосты и боулы.<br />
+        Подаём весь день.
+      </p>
+      <div class="hero-actions animate-up delay-3">
+        <a href="#breakfast" class="btn btn-primary">
+          <span>Смотреть меню</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#build" class="btn btn-ghost">Собрать своё блюдо</a>
+      </div>
+    </div>
+    <div class="scroll-indicator animate-up delay-4">
+      <span>листай вниз</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Sticky category bar -->
+  <div class="category-bar" id="categoryBar">
+    <div class="container category-scroll">
+      <button class="cat-btn active" data-target="breakfast">Завтраки</button>
+      <button class="cat-btn" data-target="toasts">Тосты</button>
+      <button class="cat-btn" data-target="bowls">Закуски & боулы</button>
+      <button class="cat-btn" data-target="hot">Горячее</button>
+      <button class="cat-btn" data-target="build">Собери сам</button>
+      <button class="cat-btn" data-target="drinks">Напитки</button>
+    </div>
+  </div>
+
+  <!-- Breakfast -->
+  <section class="section menu-section" id="breakfast">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Завтраки</h2>
+        <p class="section-note">подаём весь день</p>
+      </div>
+
+      <!-- Featured -->
+      <article class="dish-card featured reveal">
+        <div class="dish-image">
+          <div class="img-placeholder breakfast-1"></div>
+          <div class="dish-badge">хит</div>
+        </div>
+        <div class="dish-body">
+          <div class="dish-top">
+            <h3 class="dish-name">Большой завтрак Санисайд</h3>
+            <span class="dish-price">1 100 ₽</span>
+          </div>
+          <p class="dish-desc">яйцо-пятиминутка, лосось, домашний сыр, оливки, салатный микс, томаты, соус дзадзики, тартин</p>
+          <div class="dish-meta">
+            <span>490 ккал</span>
+            <span>Б 27 г</span>
+            <span>Ж 32 г</span>
+            <span>У 24 г</span>
+          </div>
+          <div class="dish-tags">
+            <span class="tag lactose">лактоза</span>
+            <span class="tag gluten">глютен</span>
+            <span class="tag editable">можно изменить</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Ролл с омлетом, ростбифом и зеленью</h3>
+              <span class="dish-price">850 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>540 ккал</span>
+              <span>Б 26 г · Ж 28 г · У 45 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag gluten">глютен</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Завтрак с глазуньей, ростбифом и салатом</h3>
+              <span class="dish-price">700 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>450 ккал</span>
+              <span>Б 18 г · Ж 20 г · У 40 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag gluten">глютен</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Зелёный омлет с моцареллой и томатами</h3>
+              <span class="dish-price">700 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>300 ккал</span>
+              <span>Б 16 г · Ж 24 г · У 3,5 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag lactose">лактоза</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Скрэмбл с креветками и соусом биск</h3>
+              <span class="dish-price">650 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>450 ккал</span>
+              <span>Б 32 г · Ж 34 г · У 4 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Шакшука с томатами и руколой</h3>
+              <span class="dish-price">550 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>360 ккал</span>
+              <span>Б 15 г · Ж 16 г · У 38 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag gluten">глютен</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Глазунья с цукини</h3>
+              <span class="dish-price">400 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>360 ккал</span>
+              <span>Б 17 г · Ж 18 г · У 35 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag gluten">глютен</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Оладьи из цукини и брокколи</h3>
+              <span class="dish-price">490 ₽</span>
+            </div>
+            <p class="dish-desc">на выбор: кешью-крем / греческий йогурт</p>
+            <div class="dish-meta">
+              <span>230 ккал</span>
+              <span>Б 10 г · Ж 14 г · У 15 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Сырники со сметаной и вишней</h3>
+              <span class="dish-price">600 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>300 ккал</span>
+              <span>Б 24 г · Ж 17 г · У 23 г</span>
+            </div>
+            <div class="dish-tags">
+              <span class="tag lactose">лактоза</span>
+              <span class="tag editable">можно изменить</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Творог с эстрагоном, лимоном и фисташкой</h3>
+              <span class="dish-price">590 ₽</span>
+            </div>
+            <p class="dish-desc">на выбор: обезжиренный творог / греческий йогурт</p>
+            <div class="dish-meta">
+              <span>410 ккал</span>
+              <span>Б 34 г · Ж 28 г · У 7 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag lactose">лактоза</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Овсянка с амарантом и сезонными фруктами</h3>
+              <span class="dish-price">590 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>510 ккал</span>
+              <span>Б 18 г · Ж 12 г · У 60 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag gluten">глютен</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Киноа с бананом и шоколадом</h3>
+              <span class="dish-price">490 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>358 ккал</span>
+              <span>Б 9,5 г · Ж 9 г · У 55 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Пшённая каша с соусом жу</h3>
+              <span class="dish-price">350 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>540 ккал</span>
+              <span>Б 23 г · Ж 12 г · У 81 г</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toasts -->
+  <section class="section menu-section alt-bg" id="toasts">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Тосты</h2>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Тост со свекольным хумусом и яйцом пашот</h3>
+              <span class="dish-price">450 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>380 ккал</span>
+              <span>Б 19 г · Ж 19 г · У 33 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag editable">можно изменить</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Авокадо-тост</h3>
+              <span class="dish-price">400 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>350 ккал</span>
+              <span>Б 6 г · Ж 22 г · У 33 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag editable">можно изменить</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Тост с ростбифом и томатным айоли</h3>
+              <span class="dish-price">650 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>570 ккал</span>
+              <span>Б 24 г · Ж 28 г · У 40 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag editable">можно изменить</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Тост с печёным перцем и анчоусами</h3>
+              <span class="dish-price">690 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>310 ккал</span>
+              <span>Б 13 г · Ж 12 г · У 38 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag editable">можно изменить</span></div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Тартин с тунцом, яйцом и томатным айоли</h3>
+              <span class="dish-price">850 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>560 ккал</span>
+              <span>Б 33 г · Ж 15 г · У 74 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag gluten">глютен</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bowls & Appetizers -->
+  <section class="section menu-section" id="bowls">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Закуски и боулы</h2>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Боул с бурым рисом и печёными овощами</h3>
+              <span class="dish-price">750 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>430 ккал</span>
+              <span>Б 9 г · Ж 25 г · У 43 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Зелёный боул с киноа и шпинатом</h3>
+              <span class="dish-price">790 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>420 ккал</span>
+              <span>Б 16 г · Ж 21 г · У 43 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Зелёный салат с фенхелем и цитрусовым соусом</h3>
+              <span class="dish-price">490 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>310 ккал</span>
+              <span>Б 8 г · Ж 22 г · У 21 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Хумус с печёной морковью и миндалём</h3>
+              <span class="dish-price">600 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>360 ккал</span>
+              <span>Б 15 г · Ж 18 г · У 36 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Паштет из печени цыплёнка с печёным перцем</h3>
+              <span class="dish-price">490 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>570 ккал</span>
+              <span>Б 32 г · Ж 20 г · У 40 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Томаты с кремом из феты</h3>
+              <span class="dish-price">600 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>160 ккал</span>
+              <span>Б 7,5 г · Ж 10 г · У 9,5 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag lactose">лактоза</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hot -->
+  <section class="section menu-section alt-bg" id="hot">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Горячее</h2>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Паккери с фланг-стейком</h3>
+              <span class="dish-price">900 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>525 ккал</span>
+              <span>Б 31 г · Ж 20 г · У 40 г</span>
+            </div>
+            <div class="dish-tags">
+              <span class="tag gluten">глютен</span>
+              <span class="tag editable">можно изменить</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Чечевичный крем-суп</h3>
+              <span class="dish-price">380 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>260 ккал</span>
+              <span>Б 14 г · Ж 5 г · У 39 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Костный бульон с зеленью и яйцом</h3>
+              <span class="dish-price">350 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>190 ккал</span>
+              <span>Б 13 г · Ж 8,5 г · У 17 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Нут со шпинатом и соусом из тархуна</h3>
+              <span class="dish-price">450 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>674 ккал</span>
+              <span>Б 17 г · Ж 14 г · У 41 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Казаречче с кенийской фасолью</h3>
+              <span class="dish-price">550 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>340 ккал</span>
+              <span>Б 7 г · Ж 12 г · У 51 г</span>
+            </div>
+            <div class="dish-tags">
+              <span class="tag gluten">глютен</span>
+              <span class="tag editable">можно изменить</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Куриное филе с тыквенным пюре, морковью и кимчи</h3>
+              <span class="dish-price">850 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>490 ккал</span>
+              <span>Б 36 г · Ж 31 г · У 16 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Палтус с зелёными овощами и лимонным соусом</h3>
+              <span class="dish-price">1 200 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>286 ккал</span>
+              <span>Б 25 г · Ж 12 г · У 18 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Митболы из говядины с цукини и соусом ромеско</h3>
+              <span class="dish-price">750 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>260 ккал</span>
+              <span>Б 24 г · Ж 16 г · У 5,5 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Бифштекс с пюре из сельдерея</h3>
+              <span class="dish-price">890 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>400 ккал</span>
+              <span>Б 29 г · Ж 29 г · У 4 г</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-body">
+            <div class="dish-top">
+              <h3 class="dish-name">Лосось с салатом из фенхеля и соусом дзадзики</h3>
+              <span class="dish-price">1 400 ₽</span>
+            </div>
+            <div class="dish-meta">
+              <span>250 ккал</span>
+              <span>Б 24 г · Ж 11 г · У 16 г</span>
+            </div>
+            <div class="dish-tags"><span class="tag lactose">лактоза</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Build your own -->
+  <section class="section menu-section" id="build">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Собери своё блюдо</h2>
+        <p class="section-note">выбери основу, белок, овощи и соус</p>
+      </div>
+
+      <div class="build-grid">
+        <div class="build-block reveal">
+          <h3 class="build-title">Крупа</h3>
+          <ul class="build-list">
+            <li><span>Гречка / зелёная гречка <small>100 г</small></span><span class="price">120 ₽</span></li>
+            <li><span>Киноа <small>100 г</small></span><span class="price">120 ₽</span></li>
+            <li><span>Бурый рис <small>100 г</small></span><span class="price">120 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="build-block reveal">
+          <h3 class="build-title">Белок</h3>
+          <ul class="build-list">
+            <li><span>Куриная грудка су-вид <small>160 г</small></span><span class="price">400 ₽</span></li>
+            <li><span>Лосось слабой соли <small>40 г</small></span><span class="price">400 ₽</span></li>
+            <li><span>Креветки на оливковом масле <small>40 г</small></span><span class="price">400 ₽</span></li>
+            <li><span>Ростбиф из говядины <small>40 г</small></span><span class="price">250 ₽</span></li>
+            <li><span>Халуми <small>30 г</small></span><span class="price">250 ₽</span></li>
+            <li><span>Тофу <small>40 г</small></span><span class="price">100 ₽</span></li>
+            <li><span>Яйцо (пашот / пятиминутка / глазунья)</span><span class="price">80 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="build-block reveal">
+          <h3 class="build-title">Овощи и зелень</h3>
+          <ul class="build-list">
+            <li><span>Запечённые овощи <small>100 г</small></span><span class="price">250 ₽</span></li>
+            <li><span>Запечённый картофель <small>100 г</small></span><span class="price">160 ₽</span></li>
+            <li><span>Авокадо <small>60 г</small></span><span class="price">240 ₽</span></li>
+            <li><span>Брокколи <small>40 г</small></span><span class="price">100 ₽</span></li>
+            <li><span>Бобы эдамаме <small>40 г</small></span><span class="price">100 ₽</span></li>
+            <li><span>Черри <small>40 г</small></span><span class="price">100 ₽</span></li>
+            <li><span>Кимчи <small>40 г</small></span><span class="price">100 ₽</span></li>
+            <li><span>Свежая зелень <small>10 г</small></span><span class="price">100 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="build-block reveal">
+          <h3 class="build-title">Хлеб</h3>
+          <ul class="build-list">
+            <li><span>Безглютеновый хлеб</span><span class="price">80 ₽</span></li>
+            <li><span>Тартин</span><span class="price">80 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="build-block reveal full">
+          <h3 class="build-title">Соусы и добавки</h3>
+          <div class="sauces-grid">
+            <div class="sauce-item"><span>Масло (кофейное / травяное / с паприкой)</span><span>80 ₽</span></div>
+            <div class="sauce-item"><span>Греческий йогурт</span><span>60 ₽</span></div>
+            <div class="sauce-item"><span>Сметана</span><span>60 ₽</span></div>
+            <div class="sauce-item"><span>Йогуртовый соус с горчицей</span><span>60 ₽</span></div>
+            <div class="sauce-item"><span>Соус дзадзики</span><span>90 ₽</span></div>
+            <div class="sauce-item"><span>Хумус</span><span>100 ₽</span></div>
+            <div class="sauce-item"><span>Кешью-крем</span><span>150 ₽</span></div>
+            <div class="sauce-item"><span>Паштет</span><span>150 ₽</span></div>
+            <div class="sauce-item"><span>Травяной дрессинг</span><span>150 ₽</span></div>
+            <div class="sauce-item"><span>Соус цитрусовый</span><span>90 ₽</span></div>
+            <div class="sauce-item"><span>Соус ромеско</span><span>90 ₽</span></div>
+            <div class="sauce-item"><span>Соус тахини</span><span>150 ₽</span></div>
+            <div class="sauce-item"><span>Соус песто</span><span>100 ₽</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drinks -->
+  <section class="section menu-section alt-bg" id="drinks">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Напитки</h2>
+      </div>
+
+      <div class="drinks-layout">
+        <!-- Coffee -->
+        <div class="drink-group reveal">
+          <h3 class="drink-group-title">Кофе</h3>
+          <ul class="drink-list">
+            <li><span>Эспрессо <small>30 мл</small></span><span>220 ₽</span></li>
+            <li><span>Двойной эспрессо <small>60 мл</small></span><span>320 ₽</span></li>
+            <li><span>Американо <small>160 мл</small></span><span>220 ₽</span></li>
+            <li><span>Фильтр-кофе <small>200 / 320 мл</small></span><span>250 / 350 ₽</span></li>
+            <li><span>Капучино <small>180 / 300 мл</small></span><span>280 / 420 ₽</span></li>
+            <li><span>Флэт уайт <small>200 мл</small></span><span>320 ₽</span></li>
+            <li><span>Латте <small>300 мл</small></span><span>420 ₽</span></li>
+            <li><span>Матча-латте <small>300 мл</small></span><span>350 ₽</span></li>
+            <li><span>Матча-шот <small>30 мл</small></span><span>220 ₽</span></li>
+            <li><span>Какао <small>300 мл</small></span><span>450 ₽</span></li>
+            <li><span>Какао-шот <small>30 мл</small></span><span>250 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="drink-group reveal">
+          <h3 class="drink-group-title">Авторский кофе</h3>
+          <ul class="drink-list">
+            <li><span>Эспрессо-тоник <small>300 мл</small></span><span>350 ₽</span></li>
+            <li><span>Матча-тоник <small>300 мл</small></span><span>350 ₽</span></li>
+            <li><span>Черничный колд-брю <small>300 мл</small></span><span>350 ₽</span></li>
+            <li><span>Бамбл ваниль <small>300 мл</small></span><span>400 ₽</span></li>
+            <li><span>Цикорий-латте <small>300 мл</small></span><span>400 ₽</span></li>
+            <li><span>Детский капучино <small>300 мл</small></span><span>300 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="drink-group reveal">
+          <h3 class="drink-group-title">Напитки с пеной</h3>
+          <ul class="drink-list">
+            <li><span>Цитрусовый драфт <small>300 мл</small></span><span>450 ₽</span></li>
+            <li><span>Кофе клауд <small>300 мл</small></span><span>420 ₽</span></li>
+            <li><span>Матча клауд <small>300 мл</small></span><span>420 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="drink-group reveal">
+          <h3 class="drink-group-title">Смузи</h3>
+          <ul class="drink-list">
+            <li>
+              <div>
+                <span>Заряд · Энергия и сытость</span>
+                <small class="drink-desc">банан, овсяное молоко, какао, арахисовая паста</small>
+              </div>
+              <span>500 ₽</span>
+            </li>
+            <li>
+              <div>
+                <span>Баланс · Зелень и полезные жиры</span>
+                <small class="drink-desc">спирулина, шпинат, авокадо, лайм</small>
+              </div>
+              <span>500 ₽</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="drink-group reveal">
+          <h3 class="drink-group-title">Фреши & лимонады</h3>
+          <ul class="drink-list">
+            <li><span>Детокс-шот имбирь-куркума <small>50 мл</small></span><span>150 ₽</span></li>
+            <li><span>Черноплодка–яблоко–свёкла <small>300 мл</small></span><span>500 ₽</span></li>
+            <li><span>ABC сок <small>300 мл</small></span><span>550 ₽</span></li>
+            <li><span>Апельсин / грейпфрут / яблоко / морковь</span><span>400 ₽</span></li>
+            <li><span>Сельдерей <small>300 мл</small></span><span>550 ₽</span></li>
+            <li><span>Щавель–киви–яблоко</span><span>350 ₽</span></li>
+            <li><span>Малина–черника</span><span>350 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="drink-group reveal">
+          <h3 class="drink-group-title">Чай & вода</h3>
+          <ul class="drink-list">
+            <li><span>Чёрный чай (цейлонский / эрл грей / таёжный)</span><span>350 ₽</span></li>
+            <li><span>Сенча</span><span>350 ₽</span></li>
+            <li><span>Травяной / фруктовый (гречишный, лимон-имбирь, русский сбор, ройбуш, вечерний, тулси)</span><span>400 ₽</span></li>
+            <li><span>Fiuggi Италия <small>1 л</small></span><span>690 ₽</span></li>
+            <li><span>RusseQuelle / Байкал / VODAVODA <small>500 мл</small></span><span>350 ₽</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special from 23 Oct -->
+  <section class="section special-section" id="special">
+    <div class="container">
+      <div class="special-card reveal">
+        <div class="special-label">специальное предложение</div>
+        <h2 class="special-title">spoon & story</h2>
+        <div class="special-items">
+          <div class="special-item">
+            <span>Греческий йогурт с гранолой и пекан-солёной карамелью</span>
+            <strong>650 ₽</strong>
+          </div>
+          <div class="special-item">
+            <span>Кокосовый йогурт с гранолой и пекан-солёной карамелью</span>
+            <strong>750 ₽</strong>
+          </div>
+          <div class="special-item">
+            <span>Протеиновый смузи боул с клубничной гранолой</span>
+            <strong>890 ₽</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legend -->
+  <section class="section legend-section">
+    <div class="container">
+      <div class="legend reveal">
+        <div class="legend-item"><span class="tag lactose"></span> содержит лактозу</div>
+        <div class="legend-item"><span class="tag gluten"></span> содержит глютен</div>
+        <div class="legend-item"><span class="tag editable"></span> можно изменить</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark">С</span>
+          <span class="logo-text">санисайд</span>
+        </div>
+        <p>spoon & story</p>
+      </div>
+      <div class="footer-note">
+        <p>Меню может меняться. Цены указаны в рублях.</p>
+        <p class="copy">© 2025 Санисайд. Сделано с любовью к завтракам.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
